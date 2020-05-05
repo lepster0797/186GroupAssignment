@@ -9,8 +9,7 @@ public class Computer implements CharSequence
     public double price;
 
     //constructor sets the default values
-    public Computer()
-    {
+    public Computer() {
         ID = "Unassigned";
         process = 0.0;
         ram = "Unassigned";
@@ -18,48 +17,37 @@ public class Computer implements CharSequence
         price = 0.0;
     }
 
-
     //setters : assigns the value from input
-    void setID (String _id)
-    {
+    void setID (String _id) {
         ID = _id;
     }
-    void setProcess (double _Process)
-    {
+    void setProcess (double _Process) {
         process = _Process;
     }
-    void setRam (String _Ram)
-    {
+    void setRam (String _Ram) {
         ram = _Ram;
     }
-    void setDisk (String _Disk)
-    {
+    void setDisk (String _Disk) {
         disk = _Disk;
     }
-    void setPrice (double _Price)
-    {
+    void setPrice (double _Price) {
         price = _Price;
     }
 
     //Getters : returns the value of inputs
-    String getID()
-    {
+    String getID() {
         return ID;
     }
-    double getProcess()
-    {
+    double getProcess() {
         return process;
     }
-    String getRam()
-    {
+    String getRam() {
         return ram;
     }
-    String getDisk()
-    {
+    String getDisk() {
         return disk;
     }
-    double getPrice()
-    {
+    double getPrice() {
         return price;
     }
 
@@ -84,12 +72,9 @@ public class Computer implements CharSequence
     public CharSequence subSequence(int start, int end) {
         return toString().subSequence(start, end);
     }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
     //Override the toString method to make the format of data shown in the text file :D
     public String toString() {
-        return "Computer ID [id=" + ID + ", Processor=" + process + ", ram=" + ram + ", disk=" + disk + ", price=" + price ;
+        return "Computer\n{"+"\n\tID: " + ID + "\n\tPROCESSOR: " + process + "\n\tRAM: " + ram + "\n\tDISK: " + disk + "\n\tPRICE: " + price +"\n\n}";
     }
 
 }

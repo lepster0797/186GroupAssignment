@@ -36,7 +36,6 @@ public class Desktop extends Computer
 
     //overrides the toString method
     public String toString() {
-        return "Computer ID [id=" + ID + ", Processor=" + process + ", ram=" + ram + "," +
-                " disk=" + disk + ", price=" + price + ", monitor=" + monitor + "]";
+        return "Desktop\n{"+"\n\tID: " + ID + "\n\tPROCESSOR: " + process + "\n\tRAM: " + ram + "\n\tDISK: " + disk +"\n\tMONITOR: "+ monitor + "\n\tPRICE: " + price +"\n\n}";
     }
     }

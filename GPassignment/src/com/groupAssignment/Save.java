@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Save{
     //takes a String filename , and an Arraylist as parameters
-    public void saveToFile(String fileName, ArrayList list) throws IOException {
+    public static void saveToFile(String fileName, ArrayList list) throws IOException {
         Path filePath = Paths.get(fileName); //to get the directory which is the project folder
 
             System.out.println("File Saved");

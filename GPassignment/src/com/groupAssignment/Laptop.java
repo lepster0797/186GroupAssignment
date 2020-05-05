@@ -37,7 +37,6 @@ public class Laptop extends Computer
 
     //overrides toString method
     public String toString() {
-        return "Computer ID [id=" + ID + ", Processor=" + process + ", ram=" + ram +
-                ", disk=" + disk + ", price=" + price + ", weight=" + Weight + "]";
+        return "Laptop\n{"+"\n\tID: " + ID + "\n\tPROCESSOR: " + process + "\n\tRAM: " + ram + "\n\tDISK: " + disk +"\n\tWEIGHT: "+ Weight + "\n\tPRICE: " + price +"\n\n}";
     }
 }
